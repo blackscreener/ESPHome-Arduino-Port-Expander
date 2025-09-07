@@ -12,6 +12,11 @@ external_components:
     components: [ arduino_port_expander ]
     refresh: 0s
 
+arduino_port_expander:
+  id: ape
+  address: 0x08
+  vref_default: false
+
 switch:
   - platform: arduino_port_expander
     arduino_port_expander: ape
